@@ -1,7 +1,10 @@
 ; テーマ色設定
-;; (color-theme-initialize)
-;; (color-theme-ld-dark)
-(load-theme 'wombat)
+;; (load-theme 'desert t t)
+;; (enable-theme 'desert)
+;; (load-theme 'dark-laptop t t)
+;; (enable-theme 'dark-laptop)
+(load-theme 'railscast t t)
+(enable-theme 'railscast)
 
 ; 行番号
 (global-linum-mode t)
@@ -11,6 +14,9 @@
 
 ; かっこのハイライト
 (show-paren-mode t)
+
+; かっこの自動挿入
+(electric-pair-mode 1)
 
 ;; ウインドウの透明度
 (add-to-list 'default-frame-alist '(alpha . 95))
