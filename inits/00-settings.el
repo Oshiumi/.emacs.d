@@ -40,3 +40,7 @@ redrawが non-nilの場合は、Windowを再描画します。"
   (when redraw (redraw-display)) tab-width)
 
 (set-aurora-tab-width (setq default-tab-width (setq-default tab-width 4)))
+
+;; タブ設定
+(c-set-offset 'statement-case-intro '+)
+(c-set-offset 'statement-case-open '+)
